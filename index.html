@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/fonts/fonts.css">
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
@@ -27,11 +27,11 @@
       <a class="header__logo" href="#0">
         <img
           class="header__logo header__logo-image"
-          src="/images/logo-black.svg"
+          src="./images/logo-black.svg"
           alt="Логотип"
         >
       </a>
-      <address class="address">
+      <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>
@@ -42,27 +42,26 @@
     </header>
     <main>
       <section class="cover">
-        <div class="overlay">
-          <h1 class="cover__title">
-            <span class="aligned-text"
-              >О<span class="letter-spacing-extended">но</span></span
-            >
-            <span class="aligned-text aligned-text_center">
-              те<span class="letter-spacing-extended">бе</span></span
-            >
-            <span class="aligned-text aligned-text_right"
-              >н<span class="letter-spacing-extended">ад</span
-              ><span class="no-letter-spacing">о</span></span
-            >
-          </h1>
-          <div class="cover__description">
-            <p class="cover__description-text">
-              Аукцион вещей,
-              <span class="letter-spacing-extended">в</span>которые никто не
-              верил
-            </p>
-            <a class="bet-button" href="#0">Сделать ставку</a>
-          </div>
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text"
+            >О<span class="letter-spacing-extended">но</span></span
+          >
+          <span class="aligned-text aligned-text_center">
+            те<span class="letter-spacing-extended">бе</span></span
+          >
+          <span class="aligned-text aligned-text_right letter-spacing-extended"
+            >н<span class="letter-spacing-normal">ад</span
+            ><span class="no-letter-spacing">о</span></span
+          >
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">
+            Аукцион вещей,
+            <span class="cover__description-text-extended">в</span>которые никто
+            не верил
+          </p>
+          <button type="button" class="bet-button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
@@ -71,10 +70,11 @@
           <li class="lots__card-list-item">
             <a class="card-link" href="#0">
               <article class="card card_type_film">
-                <div class="overlay">
-                  <h3 class="card__title">
-                    Фильм режиссёра, который бросил киношколу
-                  </h3>
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <div class="card__text-extended">
                   <p class="card__text">
                     Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                     ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -87,11 +87,11 @@
           <li class="lots__card-list-item">
             <a class="card-link" href="#0">
               <article class="card card_type_book">
-                <div class="overlay">
-                  <h4 class="card__title">
-                    Книга, где описан один скучный день из жизни рекламного
-                    агента
-                  </h4>
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <div class="card__text-extended">
                   <p class="card__text">
                     Объёмом почти в тысячу страниц. Иногда без знаков препинания
                     и с переходами на древнеанглийский. В ней одновременно
@@ -107,14 +107,17 @@
           <li class="lots__card-list-item">
             <a class="card-link" href="#0">
               <article class="card card_type_picture">
-                <div class="overlay">
-                  <h5 class="card__title">
-                    Картина, которую повторит даже 5-летний сын маминой подруги
-                  </h5>
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <div class="card__text-extended">
                   <p class="card__text">
                     Ну действительно, там линия, тут кружочек, а здесь и вовсе
                     что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков<span class="letter-spacing-extended">...</span>
+                    котиков<span class="about__text-letter-spacing-extended"
+                      >...</span
+                    >
                     Сколько бы вы на такое поставили, если бы не знали, что это
                     — одна из революционных работ Кандинского?
                   </p>
@@ -125,15 +128,15 @@
         </ul>
         <a class="lots__look-more-link" href="#0">посмотреть больше</a>
       </section>
-      <section class="about about__column">
+      <section class="about">
         <div class="about__logo">
           <img
             class="about__logo-image"
-            src="/images/logo-white.svg"
+            src="./images/logo-white.svg"
             alt="Логотип"
           >
         </div>
-        <h6 class="about__title">Об аукционе</h6>
+        <h4 class="about__title">Об аукционе</h4>
         <div class="about__text">
           <p>
             Здесь вы не встретите очередное пафосное собрание невероятно
@@ -182,21 +185,21 @@
           <a class="footer__social-link" href="#0">
             <img
               class="footer__social-icon"
-              src="/images/yt.svg"
+              src="./images/yt.svg"
               alt="youtube"
             >
           </a>
         </li>
         <li class="footer__social-list-item">
           <a class="footer__social-link" href="#0">
-            <img class="footer__social-icon" src="/images/vk.svg" alt="vk">
+            <img class="footer__social-icon" src="./images/vk.svg" alt="vk">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a class="footer__social-link" href="#0">
             <img
               class="footer__social-icon"
-              src="/images/pinterest.svg"
+              src="./images/pinterest.svg"
               alt="pinterest"
             >
           </a>
